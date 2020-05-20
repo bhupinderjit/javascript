@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* This is for header div to chnage the color */
+.header {
+  overflow: hidden;
+  background-color:brown;
+        }
+/* this  is used to edit the logo picture*/
+.header img {
+    padding-left: 40px;
+}
+/* This is to edit the header div element nav bar*/
+.header a {
+  float: left;
+  color:white;
+  text-align: center;
+  padding: 12px; 
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  	flex-direction: column;
+	  align-items: flex-start;
+  }
+  }
+  
+  .content .responsive{
+	  opacity: 0.5;
+	  width: 100%;
+    height: auto;
+  }
+    
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ /* This is for footer setting */
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+ /*This is used to align all the div elements side by side */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color: brown;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:brown;
+	text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 800px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
+@media screen and (min-width: 800px){
+  .textblock {
+  position: absolute;
+  bottom: 200px;
+  background:brown;
+  margin-top: 40px;
+  padding: 1rem;
+  border-radius: 2px;
+  margin-left: 50px;
+ 
+  
+
+}
+}
+@media screen and (min-width: 800px) {
+  .textblock1 {
+  position: absolute;
+  bottom: 200px;
+  background-color: #8f9296;
+  margin-left: 500px;
+  margin-top: 40px;
+  background:brown;
+  padding: 1rem;
+  border-radius: 2px;
+ 
+}
+}
+@media screen and (min-width: 800px) {
+  .textblock2 {
+  position: absolute;
+  bottom: 200px;
+  background-color: #8f9296;
+  margin-left: 1000px;
+  margin-top: 40px;
+  background:brown;
+  padding: 1rem;
+  border-radius: 2px;
+
+}
+}
+@media screen and (min-width: 800px) {
+  .cards img {
+  width: auto;
+  background:brown;
+  padding: 1rem;
+  border-radius: 2px;
+}
+}
+@media screen and (min-width: 800px) {
+  .cards h2 {
+  color:white ;
+}
+}
+
+@media screen and (min-width: 50px) {
+#myDIV {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 50px;
+  border-radius: 2px;
+  margin-top: 90px;
+  background-color: brown;
+  float:left;
+  opacity: 0.5;
+  margin-right: 50px;
+}
+}
+@media screen and (min-width: 800px){
+#myDIV p{
+color:white;
+
+}
+}
+
+ </style>
+</head>
+ <body>
+
+<div class="header">
+<img src="https://specials-images.forbesimg.com/imageserve/5d35eacaf1176b0008974b54/960x0.jpg?cropX1=790&cropX2=5350&cropY1=784&cropY2=3349" alt="logo"height="50" width="100" />
+     
+<div class="header-right">
+    <a class="active" href="home.html">Home</a>
+    <a href="contactus.html">Contact</a>
+    <a href="sellyourcar">SellYourCar</a>
+    <a href="serviceandrepair">Service & Repair</a>
+    <a href="contactus">Videos $ Reviews</a>
+  </div>
+</div>
+ <div class="content" >
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Aventador._%286675860749%29.jpg/1280px-Aventador._%286675860749%29.jpg"  class = "responsive">
+<div class="cards">
+<div class ="textblock"data-description="Wes is cool">
+	 <img src="https://cdn.dribbble.com/users/1065176/screenshots/5972987/attachments/1284411/us-car-sale-flyer-3.jpg"height ="120px";width ="10px"  alt="About Us">
+		<h2>About us</h2>
+		<button onclick="myFunction()">Learn more →</button>
+	  </div>
+	  <div class="textblock1" data-description="Scott is neat!">
+		<img src="https://cdn.images.express.co.uk/img/dynamic/24/750x445/1215972.jpg" height ="120px";width ="50px" alt="Car Repair">
+		<h2>Car Repair</h2>
+		<button onclick="myFunction()">Learn more →</button>
+	  </div> 
+	  <div class="textblock2" data-description="Scott is neat!">
+		<img src="https://www.ridetime.ca/wp-content/uploads/2017/08/shutterstock_189496022.jpg"height ="120px";width ="50px" alt="Car Dealership">
+		<h2>Car Dealership</h2>
+		<button onclick="myFunction()">Learn more →</button>
+    </div> 
+    
+</div>
+<div id="myDIV" style="display: none;" >
+   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda, ullam, sed quo ipsam officia
+    asperiores minima excepturi eveniet reiciendis velit debitis temporibus explicabo. Incidunt sit itaque,
+    reprehenderit fuga voluptatem officiis corrupti ipsa eveniet architecto dolorem magni facere doloribus aut
+    veritatis sequi quia repellendus aperiam assumenda exercitationem optio praesentium debitis. Excepturi unde
+    minus dignissimos at totam tempora beatae cumque, voluptates adipisci repudiandae asperiores repellat delectus
+    tempore voluptatem veritatis atque quaerat optio! Quasi, possimus molestiae hic modi quia minus eius veniam
+    aperiam assumenda fugiat fugit optio odio quas esse quam architecto officiis sunt quis cupiditate vel
+    voluptate
+ </p>
+  </div>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+  x.style.display = "block";
+  } else {
+  x.style.display = "none";
+}
+}
+</script>
+<footer class="footer-distributed">
+ 
+    <div class="footer-left">
+  
+        <h3>About<span>Car Sale</span></h3>
+
+        <p class="footer-links">
+            <a href="home.html">Home</a>
+            |
+            <a href="#">Blog</a>
+            |
+            <a href="index.html">About</a>
+            |
+            <a href="contactus.html">Contact</a>
+        </p>
+      <p class="footer-company-name">@ 2020  Bhupinderjit Kaur </p>
+    </div>
+      <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+              <p><span>54 - Applemore Road,
+                 Scarborough Ontario</span>
+                </p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>6478062024</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:bhindekang199698@gmail.com">bhindekang199698@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            We offer car sales ,Repair of the old cars and selling and buying the cars</p>
+       
+    </div>
+</footer>
+
+</body>
+</html>
